@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pusa Coffee – Transformasi Digital</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background: #f7f8f5;
+    color: #2e2e2e;
+}
+
+header {
+    background: linear-gradient(135deg, #2e8b57, #3fa55b);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2e8b57;
+    border-bottom: 2px solid #3fa55b;
+    padding-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    background: #2e8b57;
+    color: #fff;
+    padding: 15px;
+}
+.p1 {
+    font-weight: 600;
+    color: #2e8b57;
+    border-left: 4px solid #2e8b57;
+    padding-left: 10px;
+    font-size: 1.05em;
+}
+.p2 {
+    color: #3fa55b;
+    font-size: 1.05em;
+}
+.hero {
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("header.jpg");
+    background-size: cover;
+    background-position: top center;
+     background-repeat: no-repeat;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    min-height: 70vh; /* DESKTOP */
+    padding: 40px 20px;
+}
+.hero h1 {
+    font-size: 3rem;        /* ukuran besar untuk judul utama */
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;      /* ukuran subjudul lebih besar */
+    font-weight: 300;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 350px;
+        background-position: top center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;      /* sedikit lebih kecil di HP */
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+.hero h1,
+.hero p {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+
+/* HP */
+@media (max-width: 768px) {
+    .hero {
+        height: 350px;          /* LEBIH PENDEK */
+        background-position: center bottom;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
+.flowchart {
+    width: 700px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+/* Gaya umum untuk semua dokumentasi */
+.doc-img {
+    display: block;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+/* Gambar landscape */
+.landscape {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Gambar portrait (posisi di tengah + proporsional) */
+.portrait {
+    display: block;
+    margin: 25px auto;      /* ini bikin otomatis di tengah */
+    width: auto;
+    height: 500px;          /* tinggi tetap agar seragam */
+    max-height: 90vh;
+    max-width: 90%;         /* biar nggak keluar layar */
+}
+
+/* Responsif di HP */
+@media (max-width: 768px) {
+    .landscape {
+        width: 100%;
+    }
+    .portrait {
+        height: auto;       /* biar tidak terlalu tinggi di HP */
+        width: 85%;         /* tetap rapi di tengah */
+    }
+}
+/* Container untuk foto-foto pendahuluan */
+.intro-photos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;           /* jarak antar foto */
+    flex-wrap: wrap;     /* biar otomatis pindah ke bawah di HP */
+    margin: 25px 0;
+}
+
+/* Setiap foto portrait */
+.intro-photos img {
+    width: 30%;          /* 3 foto = 30% agar muat di satu baris */
+    max-width: 220px;    /* batasi lebar maksimal */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .intro-photos img {
+        width: 80%;       /* di HP jadi satu kolom */
+        max-width: none;
+    }
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>Pusa Coffee</h1>
+    <p><em>Transformasi Digital Kelompok 5 & 6</em></p>
+</header>
+
+
+<main>
+
+<section>
+<h2>Pendahuluan</h2>
+
+<p>Usaha ini berawal dari kecintaan pemilik terhadap dunia kopi dan budaya nongkrong anak muda. Terinspirasi dari semangat untuk menghadirkan tempat berkumpul yang sederhana namun bermakna, Pusa Coffee lahir sebagai wadah bagi siapa saja yang ingin menikmati kopi lokal dengan suasana santai dan harga terjangkau. Melalui tren kopi keliling ini, menuntut pelaku usaha untuk melakukan inovasi-inovasi baru dalam usaha mereka agar tetap relevan. Salah satunya Pusa coffee, sebuah usaha kopi keliling yang mulai ramai belakangan ini. Terutama di kalangan gen z yang menjadikan kopi sebagai bagian dari gaya hidup</p>
+
+<p>Didirikan pada tanggal 29 Desember 2024 yang berlokasi di jalan Poros Pinrang – Parepare, Pusa Coffee hadir dengan konsep kopi keliling yang menyajikan beragam minuman kopi dengan cita rasa khas dan harga bersahabat. Melalui konsep ini, Pusa Coffee ingin mendekatkan pengalaman ngopi langsung ke Masyarakat dari kawasan perumahan, taman kota, hingga acara komunitas.</p>
+</section>
+<div class="intro-photos">
+    <img src="pendahuluan1.jpg" alt="Pemilik Pusa Coffee">
+    <img src="pendahuluan3.jpg" alt="Gerobak kopi di lapangan">
+    <img src="pendahuluan2.jpg" alt="Proses penyajian kopi">
+</div>
+
+<section>
+<h2>Analisis Proses Bisnis Pusa Coffe</h2>
+
+<p>Dalam menjalankan usahanya, Pusa Coffee menerapkan sistem pemesanan yang fleksibel dengan dua cara, yaitu manual dan online. Pelanggan umumnya memesan langsung di lokasi booth yang tersedia, sedangkan layanan online tersedia dengan jumlah minimal 100 cup yang akan diantarkan ke tempat pelanggan. Sejauh ini, kesalahan pesanan jarang terjadi, dan jika ada, biasanya hanya satu cup yang segera diganti dengan varian lain sesuai kesepakatan. Untuk pengantaran, Pusa Coffee belum memiliki layanan antar mandiri dan masih menggunakan jasa kurir. Pemilik juga menyambut setiap keluhan pelanggan dengan terbuka, karena dianggap sebagai masukan berharga untuk memperbaiki kekurangan dan meningkatkan kualitas pelayanan di masa mendatang.</p>
+
+<p>Dalam pengadaan bahan baku, Pusa Coffee memesan melalui aplikasi khusus internal yang hanya dapat diakses oleh cabang. Supplier utama sudah ditentukan dari pusat, sedangkan bahan tambahan seperti susu full cream atau kental manis dibeli sendiri di Parepare. Setiap bahan memiliki supplier berbeda, dengan sistem pemesanan manual maupun lewat WhatsApp, di mana sales biasanya mengantar langsung. Kualitas bahan dijamin oleh penjual, dan jika stok habis mendadak, Pusa Coffee membeli secara eceran meski di atas harga normal. Pengecekan penggunaan dan pengeluaran bahan dilakukan setiap hari saat closing untuk memastikan stok tetap terkendali.</p>
+
+<p>Setelah bahan baku tersedia, Pusa Coffee melanjutkan kegiatan ke tahap produksi dan penyajian. Setiap pesanan yang masuk, baik secara manual maupun online, akan langsung diterima oleh barista untuk dibuat sesuai varian yang diminta pelanggan. Proses pembuatan dilakukan di kedai keliling dengan peralatan sederhana namun higienis. Setelah selesai, minuman disajikan langsung kepada pelanggan atau dikemas untuk dikirim melalui kurir. Dalam tahap ini, kecepatan dan ketelitian menjadi fokus utama agar setiap pesanan sesuai dan pelanggan puas dengan pelayanan yang diberikan.</p>
+</section>
+<h2>Flowchart pemesanan</h2>
+<img src="pemesanan.png" alt="Flowchart Proses Bisnis Pusa Coffee" class="flowchart">
+
+<p>Flowchart ini menggambarkan alur proses pemesanan minuman mulai dari pelanggan melakukan pemesanan hingga pesanan selesai diterima.<p>
+
+Proses diawali dengan mulai, kemudian pelanggan melakukan pemesanan. Setelah itu, sistem melakukan pengecekan jumlah pesanan apakah pesanan ≥ 100 cup (ctr).<p>
+
+<p>Jika TIDAK (pesanan < 100 ctr), maka pemesanan dilakukan melalui aplikasi Grab.
+
+<p>Jika YA (pesanan ≥ 100 ctr), maka pemesanan dilakukan secara langsung di lokasi.<p>
+
+<p>Kedua jalur pemesanan tersebut kemudian bermuara pada proses yang sama, yaitu barista menerima pesanan. Selanjutnya, barista menyiapkan minuman sesuai dengan permintaan pelanggan.<p>
+
+<p>Setelah minuman selesai disiapkan, minuman diserahkan kepada pelanggan atau kurir. Pada tahap ini dilakukan pengecekan ulang dengan pertanyaan apakah terdapat kesalahan pada pesanan.<p>
+
+<p>Jika YA, maka pesanan akan diganti dengan varian lain, lalu kembali ke proses penyiapan minuman.
+
+<p>Jika TIDAK, maka proses dinyatakan selesai.<p>
+
+<p>Flowchart ini memastikan bahwa setiap pesanan diproses sesuai ketentuan jumlah pesanan serta memberikan mekanisme penanganan apabila terjadi kesalahan pada pesanan.</p>
+
+<h2>Flowchart Produksi dan Penyajian Minuman</h2>
+<img src="produksi.png" alt="Flowchart Proses Bisnis Pusa Coffee" class="flowchart">
+
+<p>Flowchart ini menggambarkan alur kerja proses pemesanan minuman yang dilakukan oleh penjual hingga pesanan diterima oleh pelanggan.<p>
+
+<p>Proses dimulai dari Mulai, kemudian pesanan diterima oleh penjual. Setelah pesanan diterima, penjual menyiapkan bahan-bahan yang diperlukan sesuai dengan jenis minuman yang dipesan. Selanjutnya, penjual membuat minuman berdasarkan pesanan tersebut hingga minuman siap disajikan.<p>
+
+<p>Setelah minuman siap, dilakukan pengambilan keputusan mengenai jenis pemesanan, apakah pesanan dilakukan secara online atau manual (langsung).<p>
+
+<p>Jika pesanan online, maka minuman diberikan kepada kurir untuk dikirim ke alamat pelanggan.<p>
+
+<p>Jika pesanan manual, maka minuman diserahkan langsung kepada pelanggan di lokasi.<p>
+
+<p>Pada kedua kondisi tersebut, proses berlanjut ke tahap pelanggan menerima pesanan. Setelah pesanan diterima oleh pelanggan, maka proses dinyatakan selesai.<p>
+
+<p>Flowchart ini menunjukkan alur sederhana dan terstruktur dalam proses pelayanan pemesanan minuman, baik untuk pemesanan online maupun manual.</p>
+
+<h2>Flowchart Proses Pengadaan Bahan Baku</h2>
+<img src="bahanbaku.png" alt="Flowchart Proses Bisnis Pusa Coffee" class="flowchart">
+
+<p>Flowchart ini menggambarkan alur pengelolaan stok bahan yang dilakukan pada akhir operasional (closing) untuk memastikan ketersediaan bahan tetap mencukupi.<p>
+
+<p>Proses dimulai dari Mulai, kemudian dilakukan pengecekan stok bahan saat closing. Setelah itu, dilakukan keputusan apakah stok bahan masih cukup.<p>
+
+<p>Jika stok cukup, maka tidak perlu dilakukan pemesanan bahan, dan proses langsung selesai.<P>
+
+<p>Jika stok tidak cukup, maka dilanjutkan ke tahap penentuan cara pemesanan bahan.<p>
+
+<p>Terdapat tiga metode pemesanan bahan:<p>
+
+<p>1.Melalui aplikasi/sistem cabang, yaitu dengan memesan bahan lewat sistem internal.<p>
+
+<p>2.Melalui WhatsApp, dengan menghubungi langsung sales atau supplier.<p>
+
+<p>3.Secara manual, yaitu membeli bahan langsung di supermarket.<p>
+
+<p>Setelah pemesanan dilakukan melalui salah satu metode tersebut, supplier atau sales mengirimkan bahan. Bahan yang diterima kemudian melalui tahap penerimaan dan pengecekan kualitas untuk memastikan kesesuaian jumlah dan mutu bahan.<p>
+
+<p>Selanjutnya dilakukan pengecekan kembali dengan keputusan apakah stok mendadak habis:<p>
+
+<p>Jika YA, maka dilakukan pembelian eceran darurat untuk menjaga operasional tetap berjalan.<p>
+
+<p>Jika TIDAK, maka proses dinyatakan selesai.<p>
+
+<P>Flowchart ini menunjukkan sistem pengendalian stok yang fleksibel dan responsif untuk mencegah kekosongan bahan serta menjaga kelancaran operasional usaha.</p>
+
+<section>
+<h2>Analisis Masalah Bisnis</h2>
+
+<p>Dalam kegiatan operasionalnya, Pusa Coffee menghadapi beberapa kendala yang memengaruhi kelancaran usaha. Permasalahan utama terletak pada lokasi penjualan yang tidak menetap karena menggunakan gerobak keliling, sehingga pelanggan sering kesulitan menemukan posisi kedai. Selain itu, promosi usaha masih berfokus pada satu platform media sosial, yaitu Instagram, yang membuat jangkauan pemasaran belum maksimal. Dari sisi internal, pencatatan stok dan penjualan masih dilakukan secara manual, sehingga pengawasan bahan baku dan hasil penjualan kurang efisien.</p>
+
+<p>Berdasarkan analisis, akar dari permasalahan tersebut adalah minimnya penerapan teknologi digital dalam sistem operasional dan pemasaran usaha. Tidak adanya sistem informasi lokasi menyebabkan pelanggan sulit mengetahui posisi gerobak secara real time. Selain itu, pencatatan manual membuat data stok dan penjualan sulit dipantau dengan akurat. Teknologi seharusnya dapat menjadi solusi utama untuk masalah ini, misalnya dengan memanfaatkan Google Spreadsheet untuk pencatatan stok dan penjualan secara digital, pembaruan lokasi otomatis di media sosial agar pelanggan mudah menemukan gerobak.</p>
+</section>
+<img src="wawancara.jpg" alt="Flowchart Proses Bisnis Pusa Coffee" class="doc-img landscape">
+
+<section>
+<h2>Analisis SWOT</h2>
+
+<p><span class="p1">Kekuatan (Strengths)</span></p>
+<p>Kekuatan utama Pusa Coffee terletak pada kualitas produk dan pelayanan yang diberikan. Menu yang paling diminati pelanggan adalah Kopi Susu Pusa sebagai best seller, disusul oleh varian Strawberry dan Cheese yang juga cukup populer. Dari sisi cita rasa, pelanggan sering memberikan komentar positif karena rasa kopinya yang lebih kuat, tekstur creamy yang pas, serta kemasan yang praktis dan mudah dibawa. Selain itu, pelayanan yang ramah turut menjadi nilai tambah yang memperkuat loyalitas pelanggan terhadap Pusa Coffee.</p>
+
+<p><span class="p1">Kelemahan (Weaknesses)</span></p>
+<p>Kelemahan utama dalam operasional Pusa Coffee berasal dari kelalaian manusia (human error), seperti kesalahan takaran atau kopi yang tumpah saat proses penyajian. Meski jarang terjadi, hal ini menunjukkan perlunya peningkatan ketelitian dan pelatihan bagi karyawan agar kualitas produk tetap konsisten.</p>
+
+<p><span class="p1">Peluang (Opportunities)</span></p>
+<p>Peluang besar bagi Pusa Coffee muncul dari pola perilaku pelanggan yang ramai berkunjung pada waktu-waktu tertentu, terutama pada pagi hingga siang hari (sekitar pukul 10.00–13.00). Kondisi ini dapat dimanfaatkan untuk memperkuat strategi promosi, menambah stok, atau mempercepat pelayanan di jam-jam sibuk.</p>
+
+<p><span class="p1">Ancaman (Threats)</span></p>
+<p>Ancaman yang dihadapi Pusa Coffee berasal dari faktor eksternal seperti antrean panjang dan waktu tunggu yang lama, yang dapat membuat sebagian pelanggan membatalkan pesanan. Selain itu, fluktuasi harga bahan baku seperti kopi, susu, dan gula juga berpengaruh terhadap biaya produksi dan margin keuntungan. Kondisi ini menuntut Pusa Coffee untuk lebih adaptif dalam mengelola stok dan menyesuaikan harga jual tanpa mengurangi kualitas produk.</p>
+</section>
+<img src="swot.jpg" alt="Flowchart Proses Bisnis Pusa Coffee" class="doc-img portrait">
+
+<section>
+<h2>Strategy Development</h2>    
+
+<p><span class="p1">Strategi Utama: Differentiation (Diferensiasi)</span></p>
+
+<p>Strategi utama yang dipilih Pusa Coffee adalah differentiation, yaitu menciptakan pengalaman Pelanggan yang unik melalui penerapan teknologi digital untuk memperkuat identitas usaha. Sebagai bisnis kopi keliling, Pusa Coffee memiliki keunggulan tersendiri karena konsepnya yang fleksibel dan dekat dengan masyarakat. Namun, agar tetap kompetitif di era digital, diferensiasi dilakukan melalui peningkatan layanan dan interaksi pelanggan berbasis teknologi</p>
+
+<p><span class="p1">Solusi Digital Yang Diusulkan</span></p>
+
+<p><span class="p2">Pemanfaatan Media Sosial Secara Aktif (Instagram & TikTok)</span><p>
+
+<p>Karena promosi Pusa Coffee saat ini baru berfokus di Instagram, langkah pertama adalah memaksimalkan konten promosi digital. Melalui unggahan rutin, update lokasi harian, serta konten kreatif di Instagram dan TikTok, pelanggan akan lebih mudah menemukan lokasi dan tetap terhubung dengan brand.</p>
+
+<img src="medsos.jpg" alt="Flowchart Proses Bisnis Pusa Coffee" class="doc-img portrait">
+
+<p><span class="p2">Sistem Pencatatan Digital Sederhana (Spreadsheet atau Aplikasi Kasir Gratis)</span></p>
+
+<p>Untuk efisiensi operasional, digunakan sistem pencatatan digital sederhana seperti Google Spreadsheet atau aplikasi kasir gratis. Hal ini membantu pemilik memantau stok bahan baku dan penjualan secara harian tanpa proses manual yang rumit.</p>
+
+<p><span class="p2">Pemanfaatan Google Maps sebagai Penunjang Lokasi Harian</span></p>
+
+<p>Meskipun tidak memiliki lokasi tetap, Pusa Coffee dapat memanfaatkan tautan Google Maps Live Location yang dibagikan melalui bio Instagram/Tiktok atau WhatsApp Business. Dengan cara ini, pelanggan dapat mengetahui posisi gerobak secara real time tanpa perlu bertanya langsung.</p>
+
+<section>
+<h2>Digital Business Activity Value</h2>
+
+<p>dari sisi aktivitas nyata di proses bisnis, Pusa Coffee aktif menggunakan media sosial Instagram dan TikTok sebagai sarana promosi dan komunikasi dengan pelanggan. Setiap hari, tim rutin memperbarui lokasi gerobak, membagikan konten seputar menu, dan menjalin interaksi langsung dengan pelanggan. Selain itu, Pusa Coffee juga telah menerapkan pembayaran digital melalui QRIS, sehingga pelanggan dapat bertransaksi dengan lebih cepat dan praktis. Untuk mendukung kegiatan operasional, pencatatan stok dan penjualan dilakukan secara digital sederhana menggunakan spreadsheet agar data lebih rapi dan mudah dipantau.</p>
+
+<p>aktivitas digital tersebut memberikan nilai tambah yang signifikan bagi usaha. Melalui promosi digital, jangkauan pasar menjadi lebih luas tanpa perlu biaya besar. Penggunaan QRIS mempermudah pelanggan dalam bertransaksi sekaligus mempercepat pelayanan. Pencatatan digital membantu pemilik memantau hasil penjualan secara lebih efisien dan meminimalkan kesalahan manual.</p>
+
+<img src="qris.jpg" alt="Flowchart Proses Bisnis Pusa Coffee" class="doc-img portrait">
+
+<p>dari sisi perubahan dan perbaikan proses bisnis melalui teknologi, digitalisasi membuat kegiatan Pusa Coffee menjadi lebih modern dan profesional. Jika sebelumnya promosi dan transaksi dilakukan secara konvensional, kini pelanggan dapat menemukan informasi, lokasi, dan melakukan pembayaran secara digital. Langkah ini menjadikan Pusa Coffee lebih adaptif terhadap perkembangan zaman serta meningkatkan kenyamanan dan kepuasan pelanggan.</p>
+</section>
+
+<section>
+<h2>Business Implementation (Implementasi)</h2>
+
+<p>Roadmap implementasi teknologi di Pusa Coffee dilakukan secara bertahap agar setiap proses digitalisasi dapat berjalan efektif dan sesuai dengan kebutuhan bisnis.</p>
+
+<p><span class="p1">Fase 1: Persiapan</span><p>  
+
+<p>Pada tahap awal, dilakukan evaluasi kebutuhan usaha dan kesiapan sumber daya manusia. Pemilik usaha mulai mengenalkan dasar penggunaan media sosial kepada karyawan serta memastikan perangkat pendukung seperti smartphone dan koneksi internet siap digunakan. Selain itu, dilakukan pembuatan akun bisnis resmi Pusa Coffee di platform digital (Instagram, TikTok, dan WhatsApp Business).</p>
+
+<p><span class="p1">Fase 2: Digitalisasi</span><p>  
+
+<p>Tahap ini berfokus pada penerapan teknologi dalam operasional harian. Pusa Coffee mulai menerapkan pembayaran digital QRIS dan melakukan pencatatan stok serta penjualan menggunakan sistem digital sederhana seperti Google Spreadsheet. Aktivitas promosi mulai dikembangkan dengan jadwal unggahan rutin dan konten interaktif di media sosial.</p>
+
+<p><span class="p1">Fase 3: Peluncuran</span><p>  
+
+<p>Pada fase ini, kampanye pemasaran digital dilakukan secara lebih aktif. Pusa Coffee secara konsisten mengunggah konten promosi, testimoni pelanggan, dan update lokasi gerobak setiap hari di media sosial. Selain itu, pemilik usaha mulai menjalin kolaborasi kecil dengan pelanggan atau influencer lokal untuk memperluas jangkauan promosi.</p>
+
+<p><span class="p1">Fase 4: Evaluasi</span><p>  
+
+<img src="roadmap.png" alt="Flowchart Proses Bisnis Pusa Coffee" class="doc-img landscape">
+
+<p>Setelah proses digitalisasi berjalan, dilakukan evaluasi terhadap hasil promosi dan transaksi digital. Data dari penjualan dan engagement media sosial dianalisis untuk mengetahui efektivitas strategi yang digunakan. Berdasarkan masukan pelanggan, Pusa Coffee akan menyesuaikan jadwal promosi, jenis konten, serta mengevaluasi penggunaan sistem pencatatan digital agar lebih efisien.</p>
+</section>
+
+</main>
+
+<footer>
+&copy; 2025 Pusa Coffee — Kelompok 5 & 6
+</footer>
+
+</body>
+</html>
+
